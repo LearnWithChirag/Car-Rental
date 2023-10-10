@@ -1,0 +1,64 @@
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.registerWindow{
+    display: flex;
+    flex-direction: column;
+        width: 35%;
+        padding: 1.5rem;
+        margin-top: 1rem;
+       
+        border: .1rem solid black;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+        border-radius: .5rem;
+        /* background-color: white; */
+        background-color: rgb(128, 128, 128, .5);
+    
+    }
+    .registerHead{
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .registerHead img{
+        width: 2rem;
+    }
+    
+    
+    .registerDetails form{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+    }
+    .registerDetails  input , select{
+        padding: .5rem;
+        border-radius: .5rem;
+        border: none;
+    }
+
+    
+    .btnLink{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .btnLink input{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: #fbd0d9;
+        color: crimson;
+        /* color: white; */
+    }
+    
+    .btnLink p{
+        
+        font-weight: 700;
+    }
