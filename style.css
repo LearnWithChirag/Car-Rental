@@ -273,10 +273,12 @@ body{
 
 }
 
-.card input{
+.card span{
     margin: 1.5rem 0;
     padding: .5rem 2rem;
     font-size: 1.5rem;
+    border-bottom: .2rem solid crimson;
+    border-radius: .5rem;
     cursor: pointer;
 }
 
@@ -284,10 +286,39 @@ body{
     transform: translateY(-1rem);
 }
 
+.book-car-container{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* background-color: red; */
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem black;
+    padding: 1rem;
+}
+
+.book-car-container input{
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.book-car-container a{
+    text-decoration: none;
+    color: #002244;
+    border-bottom: .2rem solid #002244;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+/* about */
 .about-container{
     width: 100%;
     display: flex;
-    margin-top: 2rem;
+    margin-top: 4rem;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;

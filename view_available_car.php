@@ -25,34 +25,36 @@ session_start();
         <!-- <div class="card"> -->
             <div class="car-details">
                 <div class="table-data">
-                    <?php
-                        $categories = getActiveCars("categories");
-                        
-    
-                        if(mysqli_num_rows($categories) > 0){
-    
-                            foreach($categories as $items){
-                                ?>
-                                <div>
-                                    <p>
-                                        <img src="uploads/<?= $item['image']; ?>" alt="<?= $item['vehicle_model']; ?>">
-                                    </p>
-                                    <span>                        
-                                        <!-- <b>ID:<?= $item['id']; ?></b> -->
-                                        <b>Name: <?= $item['vehicle_model']; ?></b>
-                                        <b>Car No.: <?= $item['vehicle_number']; ?></b>
-                                        <b>Capacity: <?= $item['capacity']; ?></b>
-                                        <b>Fuel Type: <?= $item['fuel_type']; ?></b>
-                                        <b>Gear Type: <?= $item['gear_type']; ?></b>
-                                        <b>Rate: $<?= $item['rate']; ?></b>
-                                        <b>Status: <?= $item['status'] = '0'?></b>
-                                        // ?"Available":"Unavailable" ?></b>
-                                        <b><a href="edit_car.php?id=<?= $item['id']; ?>">Edit</a></b>
-                                    </span>
-                                
-                                </div>
-                                
-                                <?php
+                <?php
+                    $categories = getActiveCars("categories");
+                    // $categories = getAll("categories");
+
+                    if(mysqli_num_rows($categories) > 0){
+
+                        foreach($categories as $items){
+                            ?>
+                           
+                            <div>
+                                <p>
+                                    <img src="uploads/<?= $items['image']; ?>" alt="<?= $items['vehicle_model']; ?>">
+
+                                </p>
+                            <span>
+                            <b>Name: <?= $items['vehicle_model']; ?></b>
+                                        <b>Car No.: <?= $items['vehicle_number']; ?></b>
+                                        <b>Capacity: <?= $items['capacity']; ?></b>
+                                        <b>Fuel Type: <?= $items['fuel_type']; ?></b>
+                                        <b>Gear Type: <?= $items['gear_type']; ?></b>
+                                        <b>Rate: $<?= $items['rate']; ?></b>
+                                        <b>Status: <?= $items['status'] == '0'?"Available":"Unavailable" ?></b>
+                                        <b><a href="index.php">Book</a></b>
+                            </span>
+                            </div>
+                            
+
+                            
+
+                            <?php
                         }
                     }else{
                         echo "No Cars Available :(";

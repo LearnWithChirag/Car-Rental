@@ -132,8 +132,10 @@ session_start();
                                     <li><?= $items['fuel_type']; ?></li>
                                     <li><?= $items['gear_type']; ?></li>
                                 </ul>
-                                <input type="button" value="$<?= $items['rate']; ?>">
+                                <span>$<?= $items['rate']; ?></span>
                             </div>
+
+                            
 
                             <?php
                         }
@@ -141,7 +143,13 @@ session_start();
                         echo "No Cars Available :(";
                     }
                 ?>
-            
+        </div>
+        <div class="book-car-container">
+            <label for="from">From:</label>
+            <input type="date" name="from" >
+            <label for="to">To:</label>
+            <input type="date" name="from" >
+            <a href="view_available_car.php">Book Your Car</a>
         </div>
     </div>
 
