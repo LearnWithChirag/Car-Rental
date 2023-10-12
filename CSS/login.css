@@ -8,20 +8,19 @@ body{
     width: 100%;
     height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .loginWindow{
+    
     width: 35%;
     height: max-content;
-    background-color: #fbd0d9;
     padding: 1.5rem;
-    /* border: .1rem solid black; */
-    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 1); */
-    box-shadow: 0 0 .5rem crimson;
+    box-shadow: 0 0 .5rem black;
     border-radius: .5rem;
-    /* opacity: .5; */
 }
 
 .loginHead{
@@ -44,6 +43,7 @@ body{
 .loginDetails  input{
     padding: .5rem;
     border: none;
+    box-shadow: 0 0 .5rem black;
     border-radius: .5rem;
 }
 .btnLink{
@@ -66,4 +66,18 @@ body{
 .btnLink p{
     /* color: black; */
     font-weight: 700;
+}
+
+.back{
+    font-size: 1.5rem;
+}
+
+.back a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: red;
+    font-weight: 800;
+    border-bottom: 0.2rem solid red;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }

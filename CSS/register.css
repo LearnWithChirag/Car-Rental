@@ -2,6 +2,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    /* background-color: green; */
 }
 
 .registerWindow{
@@ -10,12 +11,12 @@ body{
         width: 35%;
         padding: 1.5rem;
         margin-top: 1rem;
-       
-        border: .1rem solid black;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+       color: black;
+        
+        box-shadow: 0 0 1rem black;
         border-radius: .5rem;
         /* background-color: white; */
-        background-color: rgb(128, 128, 128, .5);
+        /* background-color: rgb(128, 128, 128, .5); */
     
     }
     .registerHead{
@@ -27,6 +28,7 @@ body{
     }
     .registerHead img{
         width: 2rem;
+        fill: white;
     }
     
     
@@ -40,6 +42,8 @@ body{
         padding: .5rem;
         border-radius: .5rem;
         border: none;
+        box-shadow: 0 0 .5rem black;
+
     }
 
     

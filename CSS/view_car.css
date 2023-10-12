@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+.all-car-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    gap: 2rem;
+}
+
+.title {
+    color: crimson;
+    /* font-weight: 900; */
+    font-size: 2.5rem;
+}
+
+.car-details {
+    width: 80%;
+    display: flex;
+}
+
+.table-data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+.table-data div{
+    display: flex;
+    gap: 2rem;
+    /* border: .2rem solid black; */
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem black;
+}
+
+.table-data p img{
+    border-radius: .5rem;
+    width: 20rem;
+    height: 100%;
+}
+
+.table-data span{
+    padding: 2rem;
+    /* width: 100%; */
+    /* background-color: green; */
+    display: grid;
+    line-height: 3rem;
+    column-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+}

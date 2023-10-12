@@ -21,10 +21,12 @@ if(isset($_POST['submit'])){
         if($row['user_type'] == 'admin'){
 
             $_SESSION['admin_name'] = $row['name'];
+            $_SESSION['role'] = 'admin';
             header('location: admin_page.php');
-
+            
         }elseif($row['user_type'] == 'customer'){
-
+            
+            $_SESSION['role'] = 'customer';
             $_SESSION['cust_name'] = $row['name'];
             header('location: index.php');
 
@@ -52,10 +54,10 @@ if(isset($_POST['submit'])){
             <h2> User Login</h2>
         </div>
         <div class="loginDetails">
-            <form action="" method="post">
+            <form action="#" method="POST">
 
             <?php
-                if($error){
+                if(isset($error)){
                     // foreach($error as $error){
                         echo "<script>alert('$error')</script>";
                         // echo '<span class="error-msg">'.$error.'</span>';
@@ -75,6 +77,8 @@ if(isset($_POST['submit'])){
             </form>
         </div>
     </div>
-    
+    <div class="back">
+        <a href="index.php">Back To Site</a>
+    </div>
 </body>
 </html>

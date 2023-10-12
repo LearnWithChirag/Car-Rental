@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
         <div class="registerDetails">
             <form action="#" method="POST">
                 <?php
-                if($error){
+                if(isset($error)){
                     // foreach($error as $error){
                         echo "<script>alert('$error')</script>";
                         // echo '<span class="error-msg">'.$error.'</span>';
